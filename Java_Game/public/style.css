@@ -1,0 +1,113 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1b4b, #4c1d95);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+  margin: 0;
+}
+
+.card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #1e1b4b;
+}
+
+h2 {
+  font-size: 1.05rem;
+  color: #4c1d95;
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 22px;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+  margin: 10px 0 4px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: #7c3aed;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover { background: #6d28d9; }
+
+button.secondary {
+  background: #e5e7eb;
+  color: #333;
+}
+
+button.secondary:hover { background: #d1d5db; }
+
+.guess-row {
+  display: flex;
+  gap: 8px;
+}
+
+.guess-row input { flex: 1; }
+.guess-row button { width: auto; padding: 11px 18px; margin-top: 0; }
+
+.muted {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 6px 0;
+}
+
+#message {
+  font-weight: 600;
+  min-height: 24px;
+  margin: 10px 0;
+}
+
+.hidden { display: none; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+th { color: #4c1d95; }

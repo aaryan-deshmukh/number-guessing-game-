@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Number Guessing Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>🎯 Number Guessing Game</h1>
+
+    <div id="setup" class="section">
+      <label>Your name</label>
+      <input id="name" type="text" placeholder="Player" maxlength="20">
+
+      <label>Difficulty</label>
+      <select id="difficulty">
+        <option value="EASY">Easy (1–50, 10 tries)</option>
+        <option value="MEDIUM" selected>Medium (1–100, 7 tries)</option>
+        <option value="HARD">Hard (1–200, 5 tries)</option>
+      </select>
+
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <div id="game" class="section hidden">
+      <p id="rangeText" class="muted"></p>
+      <p id="triesText" class="muted"></p>
+
+      <div class="guess-row">
+        <input id="guessInput" type="number" placeholder="Enter a number">
+        <button id="guessBtn">Guess</button>
+      </div>
+
+      <p id="message"></p>
+
+      <div id="historyBox" class="muted"></div>
+
+      <button id="newGameBtn" class="secondary hidden">Play Again</button>
+    </div>
+
+    <div class="section">
+      <h2>🏆 Leaderboard</h2>
+      <table id="leaderboard">
+        <thead>
+          <tr><th>#</th><th>Name</th><th>Score</th><th>Difficulty</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
